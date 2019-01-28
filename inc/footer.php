@@ -28,7 +28,7 @@
         </a>
     </ul>
     <br><br><br>
-    <h5 class="text-center tittles-pages-logo">ELECTRONICA PARA ESTUDIANTES &copy; 2019</h5></td>
+    <h5 class="text-center tittles-pages-logo">VENTA DE EQUIPOS INFORMÁTICOS Y TECNOLOGÍCOS &copy; 2019</h5></td>
         
         </td>
         </tbody>

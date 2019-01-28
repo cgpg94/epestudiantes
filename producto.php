@@ -14,7 +14,7 @@ header('Content-type: text/html; charset=utf-8');
     $categorias=  ejecutarSQL::consultar('select * from categoria');
     $consulta=  ejecutarSQL::consultar("select * from producto where Stock > 0");
     $consultar_categorias= ejecutarSQL::consultar("select * from categoria");
-    $consultar_productos= ejecutarSQL::consultar("select * from producto where CodigoCat='".$categ['CodigoCat']."' and Stock > 0");
+   
     ?>
 </head>
 <body id="container-page-product">
@@ -86,8 +86,9 @@ header('Content-type: text/html; charset=utf-8');
                       <?php
                        
                         while($categ=mysqli_fetch_array($consultar_categorias)){
+                            $consultar_productos= ejecutarSQL::consultar("select * from producto where CodigoCat='".$categ['CodigoCat']."' and Stock > 0");
                             echo '<div role="tabpanel" class="tab-pane fade active in" id="'.$categ['CodigoCat'].'" aria-labelledby="'.$categ['CodigoCat'].'-tab"><br>';
-                                
+                           
                                 $totalprod = mysqli_num_rows($consultar_productos);
                                 if($totalprod>0){
                                    while($prod=mysqli_fetch_array($consultar_productos)){

@@ -25,7 +25,7 @@
                 <div class="col-xs-12 col-sm-6">
                    <br><br>
                     <div id="container-form">
-                       <p style="color:#fff;" class="text-center lead">ELECTRONICA PARA ESTUDIANTES <br> REGISTRO</p>
+                       <p style="color:#fff;" class="text-center lead">VENTA DE EQUIPOS INFORMÁTICOS Y TECNOLOGÍCOS <br> REGISTRO</p>
                        <br><br>
                        <form class="form-horizontal FormCatElec" action="app/regclien.php" role="form" method="post" data-form="save">
                            <div class="form-group">

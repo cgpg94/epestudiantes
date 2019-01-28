@@ -16,7 +16,7 @@
     <section id="prove-product-cat-config">
         <div class="container">
             <div class="page-header">
-              <h1>Panel de administración <small class="tittles-pages-logo">ELECTRONICA PARA ESTUDIANTES</small></h1>
+              <h1>Panel de administración <small class="tittles-pages-logo">VENTA DE EQUIPOS INFORMÁTICOS Y TECNOLOGÍCOS</small></h1>
             </div>
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -59,8 +59,8 @@
                                 <input type="text" class="form-control"  placeholder="Precio" required maxlength="20" pattern="[0-9]{1,20}" name="prod-price">
                               </div>
                               <div class="form-group">
-                                <label>Modelo</label>
-                                <input type="text" class="form-control"  placeholder="Modelo" required maxlength="30" name="prod-model">
+                                <label>Descripción del modélo</label>
+                                <input type="text" class="form-control"  placeholder="Modelo" required maxlength="255" name="prod-model">
                               </div>
                               <div class="form-group">
                                 <label>Marca</label>
@@ -516,14 +516,22 @@
                                                             <td>'.$peU['TotalPagar'].'</td>
                                                             <td>
                                                                 <select class="form-control" name="pedido-status">';
-                                                                    if($peU['Estado']=="Pendiente"){
-                                                                       echo '<option value="Pendiente">Pendiente</option>'; 
-                                                                       echo '<option value="Entregado">Entregado</option>'; 
+                                                                    if($peU['Estado']=="No entregado y no pagado"){
+                                                                       echo '<option value="Pendiente">Pendiente y no pagado</option>'; 
+                                                                       echo '<option value="Entregado">Entregado y pagado </option>'; 
+                                                                       echo '<option value="Entregado">No entregado y pagado </option>'; 
                                                                     }
-                                                                    if($peU['Estado']=="Entregado"){
-                                                                       echo '<option value="Entregado">Entregado</option>';
-                                                                       echo '<option value="Pendiente">Pendiente</option>'; 
+                                                                    if($peU['Estado']=="Entregado y pagado"){
+                                                                       echo '<option value="Entregado">Entregado y pagado </option>'; 
+                                                                       echo '<option value="Pendiente">Pendiente y no pagado</option>'; 
+                                                                       echo '<option value="Entregado">No entregado y pagado </option>'; 
                                                                     }
+                                                                    if($peU['Estado']=="No entregado y pagado"){
+                                                                        echo '<option value="Entregado">No entregado y pagado </option>'; 
+                                                                        echo '<option value="Entregado">Entregado y pagado </option>'; 
+                                                                        echo '<option value="Pendiente">Pendiente y no pagado</option>'; 
+                                                                        
+                                                                     }
                                                     echo        '</select>
                                                             </td>
                                                             <td class="text-center">

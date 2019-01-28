@@ -14,7 +14,7 @@ include 'library/configServer.php';
 
     ?>
     <div class="jumbotron" id="jumbotron-index">
-      <h1><span class="tittles-pages-logo">ELECTRONICA PARA ESTUDIANTES</span> <small style="color: #fff;"></small></h1>
+      <h1><span class="tittles-pages-logo">VENTA DE EQUIPOS INFORMÁTICOS Y TECNOLOGÍCOS</span> <small style="color: #fff;"></small></h1>
       <p>
           Bienvenido a nuestra tienda en linea, aquí encontrara una gran variedad de artículos tecnológicos.
       </p>
@@ -62,7 +62,7 @@ include 'library/configServer.php';
                    <article style="margin-top:20%;">
                         <p><i class="fa fa-users fa-4x"></i></p>
                         <h3>Registrate</h3>
-                        <p>Registrese y hagase cliente de <span class="tittles-pages-logo">ELECTRONICA PARA ESTUDIANTES</span> para recibir las mejores ofertas y descuentos especiales de nuestros productos.</p>
+                        <p>Registrese y hagase cliente de <span class="tittles-pages-logo">VENTA DE EQUIPOS INFORMÁTICOS Y TECNOLOGÍCOS</span> para recibir las mejores ofertas y descuentos especiales de nuestros productos.</p>
                         <p><a href="registro.php" class="btn btn-info btn-block">Registrarse</a></p>   
                    </article>
                 </div>
@@ -90,5 +90,6 @@ include 'library/configServer.php';
         </div>
     </section>
     <?php include './inc/footer.php'; ?>
+
 </body>
 </html>
